@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | KALADHYAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Kaladhyan Logo" class="logo-img">
+            </a>
+            
+            <!-- Mobile Hamburger Toggle Menu -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">Artist</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="page-container bg-alt">
+        <h2 class="section-title">Connect With Us</h2>
+        <p class="content-text" style="margin-bottom: 40px;">
+            Inquire about artwork availability or enroll in our upcoming oil and acrylic classes.
+        </p>
+
+        <div class="btn-container">
+            <!-- Updated standard phone call link -->
+            <a href="tel:+919916970867" class="btn">
+                <span style="margin-right: 10px;">📞</span> Call Now
+            </a>
+            
+            <!-- Updated WhatsApp chat link -->
+            <a href="https://wa.me/919916970867" target="_blank" class="btn">
+                <span style="margin-right: 10px;">💬</span> WhatsApp Us
+            </a>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.60834657348!2d77.55525817537173!3d12.93287531572552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fc9f5fe01a1%3A0x8c0e1ab2043c1136!2sKaladhyan%20art%20gallery%20%26%20art%20school!5e0!3m2!1sen!2sin!4v1781982072314!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+   <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="footer-logo">
+                    <img src="logo2.png" alt="Kaladhyan Logo">
+                </a>
+                <p class="footer-text">
+                    A sanctuary for artistic expression, fine art exhibitions, and professional oil and acrylic instruction by Umesh M Naik.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Visit Us</h3>
+                <p class="footer-text">
+                    9, Meghadhama', 1st East main, No, Kathriguppe Main Rd,<br>
+                    ITI Layout, Banashankari 3rd Stage, Banashankari,<br>
+                    Bengaluru, Karnataka 560085
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div class="social-links">
+                    <a href="#">Instagram ↗</a>
+                    <a href="#">Facebook ↗</a>
+                    <a href="#">YouTube ↗</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Kaladhyan Art Studio. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Interactive script to handle mobile layout toggle behaviors -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('is-active');
+        });
+    </script>
+
+</body>
+</html>
